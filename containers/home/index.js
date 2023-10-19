@@ -1,14 +1,19 @@
 import React from "react";
 
-import movies from "@/mocks/movies.json";
-import { FeaturedMovie } from "@/components/featured-movie";
+import Movies from "@/mocks/movies.json";
+import Genres from "@/mocks/genres.json"; 
+import { FeaturedMovie }  from "@/components/featured-movie";
+import Categories from "@/components/categories";
 
 function HomeContainer() {
   return (
     <div>
-      <FeaturedMovie movie={movies.results[0]} />
+      <FeaturedMovie movie={Movies.results[0]} />
+
+      <Categories categories={Genres.genres.slice(0,5)}/>
     </div>
   );
 }
 
 export default HomeContainer;
+

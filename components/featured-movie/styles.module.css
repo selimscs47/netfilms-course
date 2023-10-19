@@ -6,8 +6,7 @@
   margin-bottom: 56px;
 }
 
-.moviePoster {
-}
+
 
 .movieTitle {
   font-size: 72px;
@@ -16,6 +15,7 @@
   font-weight: 900;
   line-height: 72px;
   max-width: 25ch;
+  
 }
 
 .overview {
@@ -59,7 +59,7 @@
 }
 
 .moviePosterOverlay {
-  position: absolute;
+  position:absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -78,5 +78,6 @@
   height: auto !important;
   z-index: -2;
   max-height: 100vh;
-  object-fit: cover;
+  object-fit:cover;
 }
+
