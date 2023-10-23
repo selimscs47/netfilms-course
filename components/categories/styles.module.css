@@ -15,5 +15,9 @@
     height: 100%;
     border-radius: 6px;
     font-weight: 700;
+    transition: background-color 0.3s ease;
   }
   
+  .category:hover {
+    background-color:aqua; /* İmleç üstüne geldiğinde arka plan rengini değiştirin */
+}

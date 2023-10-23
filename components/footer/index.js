@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       Made with ❤️ by&nbsp;
-      <Link href="https://twitter.com/selim_scs1907" target="_blank">
+      <Link href="https://www.linkedin.com/in/selim-can-sa%C4%9Fdi%C3%A7-550548248/" target="_blank">
         Selim Can Sağdıç
       </Link>
     </footer>

@@ -10,7 +10,7 @@ function FeaturedMovie({ movie = {}, isCompact = true }) {
 
   return (
     <div className={styles.movieWrapper}>
-      <h1 className={styles.movieTitle}>{title}</h1>
+      <h1 className={styles.movieTitle}  >{title}</h1>
       <p className={`${styles.overview} ${isCompact ? styles.shortOverview : ""}`}>{overview}</p>
       <div className={styles.actionButtons}>
         <Link className={styles.playButton} href={`/movie/${movie.id}`}>
@@ -21,11 +21,10 @@ function FeaturedMovie({ movie = {}, isCompact = true }) {
         </button>
       </div>
       <div className={styles.moviePoster}>
-        <div className={styles.moviePosterOverlay}></div>
+        <div className={styles.moviePosterOverlay}/>
         <Image
-          unoptimized
-          src={`https://image.tmdb.org/t/p/original${poster_path}`}
-          // src={`https://www.merlininkazani.com/images/games/11139/Black-Panther_1.jpg`}
+         src={`https://image.tmdb.org/t/p/original${poster_path}`}
+                    // src={`https://www.merlininkazani.com/images/games/11139/Black-Panther_1.jpg`}
 
           alt={title}
           fill
