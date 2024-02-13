@@ -7,7 +7,6 @@ import styles from "./styles.module.css";
 
 function FeaturedMovie({ movie = {}, isCompact = true }) {
   const { poster_path, title, overview } = movie;
-  console.log(movie,"ddd");
 
   return (
     <div className={styles.movieWrapper}>
@@ -33,7 +32,9 @@ function FeaturedMovie({ movie = {}, isCompact = true }) {
           unoptimized
           src={`https://image.tmdb.org/t/p/original${poster_path}`}
           alt={title}
-          fill
+          layout="fill"
+          style={{ objectFit: "contain" }
+          }
         />
       </div>
     </div>
